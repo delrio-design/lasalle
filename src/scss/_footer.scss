@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: $bg-primary;
+}
+
+.footer__email {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer__text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

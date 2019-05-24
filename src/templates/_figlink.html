@@ -1,0 +1,12 @@
+{% macro field(image, caption, link) %}
+
+<figure class="image-fig">
+    <a href="{{ link }}" class="image-link-nm">
+        <img class="image-image" src="{{ image }}" alt="{{ caption }}">
+    </a>
+    <a href="{{ link }}">
+        <figcaption class="image-caption">{{ caption }}</figcaption>
+    </a>
+</figure>
+
+{% endmacro %}

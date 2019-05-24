@@ -1,0 +1,31 @@
+{% extends 'templates/_base.html' %}
+
+{% block title %}200 Class Bucks{% endblock %}
+
+{% block content %}
+
+{% import 'templates/_figcap.html' as figcap %}
+
+<h1 class="page-title">200 Class</h1>
+
+<div class="image-wrapper mb-3">
+
+    {{ figcap.field('assets/Gallery/harvest2018/img-1221-200.jpg', 'assets/Gallery/harvest2018/img-1221-200s.jpg', 'South Texas Whitetail Trophy Buck', '200 5/8 B&C Gross <br> 2018') }}
+    {{ figcap.field('assets/Gallery/harvest2018/IMG_6728.jpg', 'assets/Gallery/harvest2018/IMG_6728s.jpg', 'South Texas Whitetail Trophy Buck', 'Ryan Sharer <br> 212 5/8 B&C Gross <br> 2018') }}
+    {{ figcap.field('assets/Gallery/harvest2017/IMG_6434.jpg', 'assets/Gallery/harvest2017/IMG_6434s.jpg', 'South Texas Whitetail Trophy Buck', 'Dan Hughes Jr. <br> 206 7/8 B&C Gross <br> 2017 ') }}
+    {{ figcap.field('assets/Gallery/harvest2016/208-68-Ryan-Mckenzie.jpg', 'assets/Gallery/harvest2016/208-68-Ryan-Mckenzies.jpg', 'South Texas Whitetail Trophy Buck', '208 6/8 B&C <br> 2016') }}
+    {{ figcap.field('assets/Gallery/harvest2014/mitchellw2072.jpg', 'assets/Gallery/harvest2014/mitchellw2072s.jpg', 'South Texas Whitetail Trophy Buck', '207 0/8 B&C Gross <br> 2014 ') }}
+    {{ figcap.field('assets/Gallery/harvest2014/wsteph236.jpg', 'assets/Gallery/harvest2014/wsteph236s.jpg', 'South Texas Whitetail Trophy Buck', '236 6/8 B&C Gross <br> December 2014 ') }}
+    {{ figcap.field('assets/Gallery/harvest2014/cthomas222.jpg', 'assets/Gallery/harvest2014/cthomas222s.jpg', 'South Texas Whitetail Trophy Buck', '222 2/8 B&C Gross <br> November 2014 ') }}
+    {{ figcap.field('assets/Gallery/harvest2013/hart218l.jpg', 'assets/Gallery/harvest2013/hart218.jpg', 'South Texas Whitetail Trophy Buck', '218 0/8 B&C Gross <br> 2013') }}
+    {{ figcap.field('assets/Gallery/harvest2010/l_0414.jpg', 'assets/Gallery/harvest2010/IMG_0414.jpg', 'South Texas Whitetail Trophy Buck', 'B&C 202 4/8 found dead 2010') }}
+    {{ figcap.field('assets/Gallery/harvest2010/l_2193.jpg', 'assets/Gallery/harvest2010/IMG_2193.jpg', 'South Texas Whitetail Trophy Buck', 'B&C 202 4/8 found dead 2010') }}
+
+</div>
+
+<div class="harvest-links">
+    <a href="/190-class.html" class="harvest-link">&lt;-- 190 Class Photos</a>
+    <a href="/180-class.html" class="harvest-link">180 Class Photos --&gt;</a>
+</div>
+
+{% endblock %}

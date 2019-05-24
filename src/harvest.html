@@ -1,0 +1,19 @@
+{% extends 'templates/_base.html' %}
+
+{% block title %}Harvest Photos{% endblock %}
+
+{% block content %}
+
+{% import 'templates/_figlink.html' as figlink %}
+
+<h1 class="page-title">Harvest Photos</h1>
+
+<div class="image-wrapper">
+
+    {{ figlink.field('assets/Gallery/harvest2013/hart218.jpg', '200 Class B&C' , '/200-class.html') }}
+    {{ figlink.field('assets/Gallery/harvest2013/clintgreen191s.jpg', '190 Class B&C' , '/190-class.html') }}
+    {{ figlink.field('assets/Gallery/g180-2.jpg', '180 Class B&C' , '/180-class.html') }}
+
+</div>
+
+{% endblock %}

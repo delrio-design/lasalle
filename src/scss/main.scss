@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'MesquiteStd';
+    src: url('/fonts/MesquiteStd.otf');
+}
+
+@font-face {
+    font-family: 'NuevaStdBold';
+    src: url('/fonts/NuevaStd-Bold.otf');
+}
+
+
+$bg-primary: #c8c7ac;
+$bg-secondary: #6a6057;
+$bg-content: #ffffff;
+$text-secondary: #2F5E0D;
+
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1280px;
+
+@import 'reset';
+@import 'header';
+@import 'navigation';
+@import 'pictures';
+@import 'footer';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('/images/background.jpg')
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Lora', serif;
+    color: #6a6057;
+}
+
+.sr-only {
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.sr-only:focus {
+    height: auto;
+    overflow: unset;
+}
+
+.wrapper {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @media screen and (min-width: $break-sm) {
+        width: calc(100% - 20px)
+    }
+
+    @media screen and (min-width: $break-md) {
+        width: 748px;
+    }
+
+    @media screen and (min-width: $break-lg) {
+        width: 992px;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: $break-xl) {
+        width: 1000px;
+    }
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-content;
+
+    @media screen and (min-width: $break-lg) {
+        flex-direction: row;
+    }
+
+}
+
+.main {
+    padding: 0.5em;
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.my-3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mt-3 {
+    margin-top: 1em;
+}
+
+.mb-1 {
+    margin-bottom: 0.5em;
+}
+
+.mb-3 {
+    margin-bottom: 1em;
+}
+
+.slider-wrapper {
+    width: 100%;
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider-control {
+    border: none;
+    padding: 0.5em;
+    background-color: rgba(0,0,0,0);
+    text-decoration: none;
+}
+
+.slider-control:focus, .slider-control:hover {
+    background-color: black;
+    color: white;
+}
+
+.slider-stop {
+    margin-right: 0.5em;    
+}
+
+.slider-start {
+    margin-left: 0.5em;
+}
+    
+.year {
+    text-align: center;
+}

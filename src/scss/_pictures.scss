@@ -1,0 +1,51 @@
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $break-lg) {
+        flex-direction: row;
+    }
+
+}
+
+.image-fig:last-child:not(:nth-child(even)) {
+    margin-right: auto;
+}
+
+.image-fig {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-top: 2em;
+
+    @media screen and (min-width: $break-lg) {
+        flex-direction: row;
+        width: 50%;
+        max-width: 50%;
+    }
+}
+
+.image-link, .image-link-nm {
+    display: inline-block;
+}
+
+.image-link:focus, .image-link-nm:focus {
+    outline: 3px solid $bg-secondary;
+}
+
+.image-image {
+    object-fit: cover;
+    display: block;
+    border: 2px solid $bg-primary;
+    border-radius: 1px;
+}
+
+.image-caption {
+    margin-top: 1em;
+    text-align: center;
+}

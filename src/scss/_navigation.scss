@@ -1,0 +1,59 @@
+.nav-nav {
+    background-color: $bg-secondary;
+    width: auto;
+
+    @media screen and (min-width: $break-lg) {
+        flex-direction: column;
+        width: 15em;
+    }
+}
+
+.nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+
+    @media screen and (min-width: $break-md) {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: $break-lg) {
+        flex-direction: column;
+    }
+
+}
+
+.nav-item {
+    margin: 1em;
+}
+
+.nav-link {
+    color: $bg-content;
+    font-weight: 700;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.nav-link:focus {
+    outline: 3px solid $bg-content;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #c8c7ac;
+}
+
+.harvest-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.harvest-link {
+    color: #6A6056;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.harvest-link:hover, .harvest-links:focus {
+    color: #000;
+}

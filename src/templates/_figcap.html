@@ -1,0 +1,10 @@
+{% macro field(big, small, alt, caption) %}
+
+<figure class="image-fig">
+    <a href="{{ big }}" class="image-link" data-modaal-desc="{{ caption | striptags(true) }}" aria-haspopup="dialog">
+        <img class="image-image" src="{{ small }}" alt="{{ alt }}">
+    </a>
+    <figcaption class="image-caption">{{ caption | safe }}</figcaption>
+</figure>
+
+{% endmacro %}
